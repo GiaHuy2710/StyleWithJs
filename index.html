@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <header>
+      <h1>Top 3 Places to Visit</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="https://www.worldtravelguide.net/" target="_blank">World Travel</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      
+      <img
+        id="mainImage"
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Kinkaku-ji_the_Golden_Pavilion_in_Kyoto%2C_Japan.jpg"
+        alt="Main display image"
+      />
+
+      <h3>Hover over the images below:</h3>
+
+      <div class="thumbnails">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Kinkaku-ji_the_Golden_Pavilion_in_Kyoto%2C_Japan.jpg"
+          alt="Kyoto, Japan"
+          onmouseover="preview(this)"
+          onmouseout="restore()"
+        />
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Santorini_sunset%2C_2017.jpg"
+          alt="Santorini, Greece"
+          onmouseover="preview(this)"
+          onmouseout="restore()"
+        />
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/99/Moraine_Lake_17092005.jpg"
+          alt="Banff, Canada"
+          onmouseover="preview(this)"
+          onmouseout="restore()"
+        />
+      </div>
+
+      <h3>Why I chose these places</h3>
+      <ul>
+        <li>Beautiful scenery</li>
+        <li>Unique culture</li>
+        <li>Great photo spots</li>
+      </ul>
+    </main>
+
+    <footer>
+      <p>Project 2025</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
